@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlushTheToiletClient.Android", "FlushTheToiletClient\FlushTheToiletClient.Android\FlushTheToiletClient.Android.csproj", "{FE0AA362-282F-4499-A5EC-01617EE16B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlushTheToiletClient", "FlushTheToiletClient\FlushTheToiletClient\FlushTheToiletClient.csproj", "{70DB2320-AF01-481F-A04D-734C815CC0EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0AA362-282F-4499-A5EC-01617EE16B85}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DB2320-AF01-481F-A04D-734C815CC0EE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F5F8388-9F2E-4488-B51A-B13F48B56D32}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FlushTheToiletClient.Views.SetupPage"
+             Title="{Binding Title}"
+             x:Name="BrowseSetupPage">
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>-->
+
+    <StackLayout>
+        <Button Text="Motor Forward" Command="{Binding MotorForwardCommand}"/>
+        <Button Text="Motor Backward" Command="{Binding MotorBackwardCommand}"/>
+        <Button Text="Stop Motor" Command="{Binding StopMotorCommand}"/>
+
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Get distance" Grid.Row="0" Grid.Column="0" Command="{Binding GetDistanceCommand}"/>
+                <Label Text="{Binding Distance}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="All LEDs On" Grid.Row="0" Grid.Column="0" Command="{Binding LedOnCommand}" CommandParameter="all" BackgroundColor="WhiteSmoke" />
+                <Button Text="All LEDs Off" Grid.Row="0" Grid.Column="1" Command="{Binding LedOffCommand}" CommandParameter="all" BackgroundColor="WhiteSmoke" />
+
+                <Button Text="Red LED On" Grid.Row="1" Grid.Column="0" Command="{Binding LedOnCommand}" CommandParameter="red" BackgroundColor="Red"/>
+                <Button Text="Red LED Off" Grid.Row="1" Grid.Column="1" Command="{Binding LedOffCommand}" CommandParameter="red" BackgroundColor="Red"/>
+
+                <Button Text="Yellow LED On" Grid.Row="2" Grid.Column="0" Command="{Binding LedOnCommand}" CommandParameter="yellow" BackgroundColor="Yellow"/>
+                <Button Text="Yellow LED Off" Grid.Row="2" Grid.Column="1" Command="{Binding LedOffCommand}" CommandParameter="yellow" BackgroundColor="Yellow"/>
+
+                <Button Text="Green LED On" Grid.Row="3" Grid.Column="0" Command="{Binding LedOnCommand}" CommandParameter="green" BackgroundColor="Green"/>
+                <Button Text="Green LED Off" Grid.Row="3" Grid.Column="1" Command="{Binding LedOffCommand}" CommandParameter="green" BackgroundColor="Green"/>
+            </Grid>
+        </StackLayout>
+        <!--<ListView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+                ItemSelected="OnItemSelected">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>First Item</x:String>
+                    <x:String>Second Item</x:String>
+                    <x:String>Third Item</x:String>
+                    <x:String>Forth Item</x:String>
+                    <x:String>Fifth Item</x:String>
+                    <x:String>Sixth Item</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Text}" 
+                                d:Text="{Binding .}"
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" />
+                            <Label Text="{Binding Description}" 
+                                d:Text="Item description"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="13" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+    </StackLayout>
+
+</ContentPage>
